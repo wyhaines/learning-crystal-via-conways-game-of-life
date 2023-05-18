@@ -3,5 +3,5 @@
   "features": {
     "ghcr.io/devcontainers-contrib/features/crystal-asdf:2": {}
   },
-  "updateContentCommand": "./.devcontainer/postCreateCommand.sh"
+  "updateContentCommand": "./.devcontainer/postInstallCommand.sh"
 }
