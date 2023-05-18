@@ -211,6 +211,8 @@ This will create an array of 10 arrays, each of which will have 10 elements, wit
 
 Now that you have a basic understanding of some of these concepts, it is time to write some code. If you look in the `src/` directory of your project, you will find a `life.cr` file. Open it in your editor. You will see that it already has a `Life` class defined, but there is nothing else there. Your first task is to add instance an variable for `@board`, which holds an `Array` of `Array` of `Bool` (`Bool` is a boolean type, that holds a value which is either `true` or `false`), defaulting all values to `false`. In addition, instance variables should be added for `@height` and `@width`, which hold the height and width of the board. The `initialize` method should take two arguments, `height` and `width`, and it should set the `@height` and `@width` instance variables to the values of those arguments, as well as assigning a new `Array` of `Array` of `Bool` to the `@board` instance variable.
 
+*hint* It is probably easier to write the rest of the code if you build your `@board` array with the outer array being the height of the board, and the inner arrays being the width of the board.
+
 If you need help, save your work (`git commit -a`), and then switch to the `step-2` branch (`git checkout step-2`). This branch has the code for this step already written. When you are done looking at it, you can switch back to your working branch again to implement your version (`git checkout working-branch`).
 
 ## Step 3: Initialize Board State
@@ -246,7 +248,7 @@ This will print *Hello* 10 times.
 
 ### Let's Write Some Code
 
-Add a `set_alive` method to your `Life` class that takes an `x` and `y` coordinate, and sets the cell at that coordinate to `true`.
+Add a `set_alive` method to your `Life` class that takes an `x` and `y` coordinate, and sets the cell at that coordinate to `true`. Pay attention to how you built your `@board` array. 
 
 Then add a `setup` method to your `Life` class that will randomly set about 25% of the cells on the board to `true`. In Crystal, if you want to do integer division, you can use `//` to do so. So, to get an integer representing 25% of the cells on the board, you will do this: `(@height * @width) // 4`. Use that to create a loop that will call `set_alive` on a random x and y coordinate on the board, 25% of the time.
 
