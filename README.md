@@ -4,7 +4,9 @@ Learning by doing is one of the best ways to learn. This repository is intended 
 
 ## Installation
 
-To get started with this lesson, [fork](https://github.com/wyhaines/learning-crystal-via-conways-game-of-life/fork) this repository. If you have Crystal installed on your local machine, feel free to use it, but this repository is setup for use with Github Codespaces, which provides a fully configured development environment for you to use.
+To get started with this lesson, [fork](https://github.com/wyhaines/learning-crystal-via-conways-game-of-life/fork) this repository. If you have Crystal installed on your local machine, feel free to use it, but this repository is setup for use with Github Codespaces, which provides a fully configured development environment for you to use. To use the workshop via Codespaces, use your browser to go to your fork: *https://github.com/YOUR-GIT-HANDLE/learning-crystal-via-conways-game-of-life*
+
+Under the *Code* button will be a tab labeled "Codespaces". Click on it. The text that appears will have a button, "Create codespace on main". Click that button. It will take perhaps a couple of minutes, but when finished, you will have a browser tab open with an in-browser version of Visual Studio Code, and a terminal window with a preconfigured VM, with Crystal installed and ready to use.
 
 ## What is Conway's Game of Life?
 
