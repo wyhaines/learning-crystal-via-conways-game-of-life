@@ -47,7 +47,13 @@ Before `git commit` will work, you need to tell git which files you want to comm
 git add src/life.cr
 ```
 
-You won't necessarily need to use this command, though, because for most solutions, all of the files that you need already exist in this repository. You will just need to edit them.
+You won't need to use this command to complete this workshop. It is being included simply for completeness-sake.
+
+When you are ready to push your work back to GitHub, you can use `git push`:
+
+```bash
+git push origin working-branch
+```
 
 ## Step 2: Crystal is Object Oriented
 
