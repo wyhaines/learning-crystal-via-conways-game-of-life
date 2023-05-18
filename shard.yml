@@ -1,0 +1,13 @@
+name: life
+version: 0.1.0
+
+authors:
+  - Kirk Haines <wyhaines@gmail.com>
+
+targets:
+  life:
+    main: src/life.cr
+
+crystal: 1.8.2
+
+license: MIT
