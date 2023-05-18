@@ -206,7 +206,7 @@ class Example
   @my_array_of_arrays_of_numbers : Array(Array(Int32))
 
   def initialize
-    @my_array_of_numbers = Array.new(10) { Array(Int32).new(10) { |i| i * 2 }
+    @my_array_of_numbers = Array.new(10) { Array(Int32).new(10) { |i| i * 2 } }
   end
 end
 ```
