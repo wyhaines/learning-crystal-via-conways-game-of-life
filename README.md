@@ -248,7 +248,11 @@ This will print *Hello* 10 times.
 
 ### Let's Write Some Code
 
-Add a `set_alive` method to your `Life` class that takes an `x` and `y` coordinate, and sets the cell at that coordinate to `true`. Pay attention to how you built your `@board` array. 
+Add a `set_alive` method to your `Life` class that takes an `x` and `y` coordinate, and sets the cell at that coordinate to `true`. Pay attention to how you built your `@board` array. Make sure that you are setting the correct cell to `true`. If you followed the hint earlier, your `@board` array will have height as the outer array, and width as the inner array, meaning you will want a line something like this:
+  
+```crystal
+@board[y][x] = true
+```
 
 Then add a `setup` method to your `Life` class that will randomly set about 25% of the cells on the board to `true`. In Crystal, if you want to do integer division, you can use `//` to do so. So, to get an integer representing 25% of the cells on the board, you will do this: `(@height * @width) // 4`. Use that to create a loop that will call `set_alive` on a random x and y coordinate on the board, 25% of the time.
 
@@ -432,7 +436,7 @@ Modify the `run` method to use a `loop`. Inside of the loop, call `print_board`,
 
 If you run your code again, and if the compiler finds no errors, you will see your cellular automata simulation running. Congratulations! It is likely that the simulation will eventually reach a point where it is stable, with the board either no longer changing (and perhaps with all of the cells being dead), or perhaps simply flipping between repeated states. When this happens, press *ctrl-c* to stop the program.
 
-## Step 9: Extra Credit
+## Step 8: Extra Credit
 
 One convenient feature that could be added to the `calculate_next_generation` method is a check to see if the new board is identical to the old board before assigning the new board to `@board`. If it is identical, print a message to that effect, and exit from the program. This won't detect situations where the board gets stuck repeating through a series of states, but it will detect if the board reaches a state where nothing is changing at all. To exit from a program, you just use the `exit` method:
 
