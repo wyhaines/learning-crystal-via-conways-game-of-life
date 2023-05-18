@@ -27,6 +27,12 @@ These rules can be simplified to:
 
 This README will walk you through the steps of implementing Conway's Game of Life in Crystal, introducing the concepts necessary for each step along the way. To work your way through the steps, the first thing that you should do is to create a new branch from the `main` branch of your fork of this repository. This will be your working branch. If, at any point, you get stuck, you can save your work to your branch, and switch to the branch for whichever step you are at to see my solution for that step. It won't necessarily match the work that you are doing, but it should give you the clues that you need to get unstuck.
 
+## Additional Resources
+
+There are two online resources that are extremely useful when learning to write Crystal code. The first is the online [Language Reference](https://crystal-lang.org/reference/1.8/syntax_and_semantics/index.html), which is a minimal, but relatively complete reference for the language syntax.
+
+The second is the [standard library API reference documentation](https://crystal-lang.org/api/latest/). This documentation is auto-generated when Crystal is built, and contains detailed explanations about how all of the building blocks that make up the language work. It is a work-in-progress, but many pieces of it contain sample code that helps to make clear how to use those parts of the language. Don't be shy about looking things up in either resource if you get stuck.
+
 ## Step 1: Create your branch
 
 It is a good idea to understand some basic git commands, but if you need a brief summary of the important commands, here they are:
@@ -446,6 +452,10 @@ One convenient feature that could be added to the `calculate_next_generation` me
     exit
   end
 ```
+
+## Congratulations!
+
+The tools that you used to build a running version of Conway's Game of Life, using Crystal, are enough to get you started building anything else that might be interesting to you. Use the resources that were mentioned at the beginning of this tutorial, explore, and have fun!
 
 ## Contributing
 
